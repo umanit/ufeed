@@ -46,9 +46,10 @@ $(document).ready(function()
     $('form#feeds input[name="addLines"]').click(function(e)
     {
         // Number of lines
-        var lastTR = $('form#feeds table tbody tr').last();
-        var line = parseInt(lastTR.attr('data-feedid')) + 1;
-        var lines = $('form#feeds table tbody tr').length + 1;
+        var lastTR = $('form#feeds table tbody tr').last(),
+            line = parseInt(lastTR.attr('data-feedid')) + 1,
+            lines = $('form#feeds table tbody tr').length + 1;
+            
         $('form#feeds input[name="lines"]').val(lines);
 
         // Clone the last one
@@ -69,25 +70,38 @@ $(document).ready(function()
         e.preventDefault();
     });
 
+    // Link to open feed *******************************************************
+    $('form#feeds .link a').live('click', function(e)
+    {
+        e.preventDefault();
+        
+        var url = $(this).closest('tr').find('.url input[type="text"]').val();
+        
+        if (url)
+        {
+            window.open(url, '_blank');
+        }
+    });
+
     // Ajax button to delete feeds *********************************************
     $('form#feeds input[name^="deleteFeed"]').live('click', function(e) // Tous les inputs dont le nom commence par deleteFeed
     {
-        var TR = $(this).closest('tr');
-        var feed_id = TR.attr('data-feedid');
+        var tr = $(this).closest('tr'),
+            feedID = tr.attr('data-feedid');
 
         // Get the news item from database
-        $.ez('ufeedtools::deleteFeeds::'+feed_id, {}, function(data)
+        $.ez('ufeedtools::deleteFeeds::'+feedID, {}, function(data)
         {
             if (data.content == true)
             {
                 // S'il ne reste plus qu'une ligne
                 if ($('form#feeds table tbody tr').length==1)
                 {
-                    TR.find(':input[name^="feeds"]').val(''); // Tous les input dont le nom commence par feeds
+                    tr.find(':input[name^="feeds"]').val(''); // Tous les input dont le nom commence par feeds
                 }
                 else
                 {
-                    TR.remove();
+                    tr.remove();
                 }
 
                 // Number of lines

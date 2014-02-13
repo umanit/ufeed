@@ -32,6 +32,11 @@
                                                 <abbr title="Uniform Resource Locator" lang="en">URL</abbr>
                                             </div>
                                         </th>
+                                        <th class="link">
+                                            <div class="yui-dt-liner">
+                                                {"Lien"|i18n('extension/ufeed/news')}
+                                            </div>
+                                        </th>
                                         <th class="title">
                                             <div class="yui-dt-liner">
                                                 {"Titre"|i18n('extension/ufeed/news')}
@@ -83,6 +88,11 @@
                                                 <div class="yui-dt-liner">
                                                     <label for="feed_url_{$id}"><abbr title="Uniform Resource Locator" lang="en">URL</abbr></label>
                                                     <input type="text" name="feeds[{$id}][url]" id="feed_url_{$id}" value="{$url}" />
+                                                </div>
+                                            </td>
+                                            <td class="link">
+                                                <div class="yui-dt-liner">
+                                                    <a href="{$url}" title="{"Ouvrir le flux dans un nouvel onglet"|i18n('extension/ufeed/news')}" target="_blank">{"Ouvrir"|i18n('extension/ufeed/news')}</a>
                                                 </div>
                                             </td>
                                             <td class="title">

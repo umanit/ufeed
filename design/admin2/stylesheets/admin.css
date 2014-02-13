@@ -149,8 +149,9 @@ form#feeds {
     margin-bottom: 40px;
 }
 form#feeds table label { display: none; }
-form#feeds table th.url { width: 40%; }
-form#feeds table th.title { width: 30%; }
+form#feeds table th.url { width: 35%; }
+form#feeds table th.link { width: 10%; }
+form#feeds table th.title { width: 25%; }
 form#feeds table th.status { width: 20%; }
 form#feeds table input[type="text"] { width: 99%; }
 form#feeds table td input.button { margin: 0; }
