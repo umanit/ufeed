@@ -1,0 +1,260 @@
+/* Misc ***********************************************************************/
+.required { color: red; }
+.offscreen {
+    position: absolute;
+    top: -9999px;
+}
+.button.red {
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EE5F5B), to(#BD362F));
+    background-image: -moz-linear-gradient(top, #EE5F5B, #BD362F);
+    background-image: -ms-linear-gradient(top, #EE5F5B, #BD362F);
+    background-image: -o-linear-gradient(top, #EE5F5B, #BD362F);
+    background-image: linear-gradient(top, #EE5F5B, #BD362F);
+}
+.button.green {
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#62C462), to(#51A351));
+    background-image: -moz-linear-gradient(top, #62C462, #51A351);
+    background-image: -ms-linear-gradient(top, #62C462, #51A351);
+    background-image: -o-linear-gradient(top, #62C462, #51A351);
+    background-image: linear-gradient(top, #62C462, #51A351);
+}
+
+/* Grid layout ****************************************************************/
+.grid_9 {
+    display: inline;
+    float: left;
+    height: auto !important;
+    margin: 0px 10px;
+    min-height: 1px;
+    width: 700px;
+}
+.grid_8 {
+    display: inline;
+    float: left;
+    height: auto !important;
+    margin: 0px 10px;
+    min-height: 1px;
+    width: 620px;
+}
+.grid_7 {
+    display: inline;
+    float: left;
+    height: auto !important;
+    margin: 0px 10px;
+    min-height: 1px;
+    width: 540px;
+}
+.grid_6 {
+    display: inline;
+    float: left;
+    height: auto !important;
+    margin: 0px 10px;
+    min-height: 1px;
+    width: 460px;
+}
+.grid_5 {
+    display: inline;
+    float: left;
+    height: auto !important;
+    margin: 0px 10px;
+    min-height: 1px;
+    width: 380px;
+}
+.grid_4 {
+    display: inline;
+    float: left;
+    height: auto !important;
+    margin: 0px 10px;
+    min-height: 1px;
+    width: 300px;
+}
+.grid_3 {
+    display: inline;
+    float: left;
+    height: auto !important;
+    margin: 0px 10px;
+    min-height: 1px;
+    width: 220px;
+}
+.box-header { margin-bottom: 20px; }
+.container {
+    background-color: #F8F8F8;
+    border: 1px solid #CACACA;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+div.ufeed-tab-content {
+    padding: 1em;
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    overflow-y: visible;
+}
+
+/* Global form settings *******************************************************/
+#maincontent form { margin-bottom: 20px; }
+#maincontent form fieldset { margin-bottom: 20px; }
+#maincontent form fieldset h2 {
+    font-size: 1em;
+    margin: 0px;
+}
+#maincontent form legend { padding: 0px 10px; }
+
+#maincontent form select { margin-bottom:10px; }
+#maincontent form select[name="event"] { margin-left: 10px; }
+#maincontent form input[type="radio"] {
+    margin-left: 0px;
+    text-align: left;
+}
+#maincontent form input[name="subject"] { margin: 10px 0px; }
+#maincontent form input[type="text"] {
+    width: 50%;
+    margin-bottom: 10px;
+}
+#maincontent form input[type="submit"] { display: block; }
+
+#maincontent form textarea {
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+}
+
+input.button {
+    margin: 10px 0px 10px 0px;
+}
+input.fakeLink {
+    background: none;
+    border: none;
+    font-size: 1em;
+    margin: 0px;
+    padding: 0px;
+    color: #0B4E7A;
+    position: relative;
+}
+input.fakeLink:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #E24602;
+}
+.yui-dt th.yui-dt-first {
+    border-left: none;
+}
+
+div.pagenavigator {
+    margin-top: 20px;
+}
+
+/* Feeds form *****************************************************************/
+form#feeds {
+    position: relative;
+    margin-bottom: 40px;
+}
+form#feeds table label { display: none; }
+form#feeds table th.url { width: 40%; }
+form#feeds table th.title { width: 30%; }
+form#feeds table th.status { width: 20%; }
+form#feeds table input[type="text"] { width: 99%; }
+form#feeds table td input.button { margin: 0; }
+form#feeds input#storeFeeds {
+    position: absolute;
+    bottom: -30px;
+    margin: 0;
+}
+
+/* JS checkboxes controls *****************************************************/
+#js-controls {
+    display: none;
+    margin: 10px 0px 10px 0px;
+    position: relative;
+}
+#js-controls ul {
+    display :none;
+    z-index: 10;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    position: absolute;
+    top: 23px;
+    background: white;
+    border: 1px solid #CCCCCC;
+}
+#js-controls ul li {
+    padding: 3px 10px;
+    margin: 0px;
+}
+#js-controls ul li:hover {
+    cursor: pointer;
+    background-color: #D1DFE9;
+}
+#js-controls #ezopt-menu-check {
+    background-position: 6px -62px;
+}
+#js-controls #ezopt-menu-uncheck
+{
+    background-position: 6px -30px;
+}
+#js-controls #ezopt-menu-toggle
+{
+    background-position: 6px 50%;
+}
+
+/* Items list *****************************************************************/
+#newsform .grid_7 { margin-left: 0px; }
+#newsform table td.pointer:hover,
+#newsform table td.pointer label:hover {
+    cursor: pointer;
+}
+#newsform table td.pointer:hover a,
+#newsform table td.pointer label:hover a {
+    color: #E24602;
+}
+#newsform table label {
+    white-space: normal;
+    font-weight: normal;
+}
+#newsform table img.source {
+    width: 16px;
+    height: 16px;
+}
+#newsform a.edit {
+    background: url("../images/edit.png") 0px 0px no-repeat;
+    padding-left: 18px;
+    display: inline-block;
+    margin-left: 5px;
+}
+#newsform table a.edit {
+    width: 16px;
+    height: 16px;
+}
+#newsform .action-buttons a.edit {
+    margin-right: 10px;
+}
+#newsform #purgeNews {
+    display: inline-block;
+    margin-top: 0;
+}
+
+/* Hidden edit form below the news items list *********************************/
+#edit-form {
+    display: none;
+}
+
+/* Item preview ***************************************************************/
+#newsform #preview {
+    padding: 10px;
+    margin-top: 6px;
+    background: white;
+}
+#newsform #preview h3 { margin: 0px; }
+#newsform #preview img {
+    float: left;
+    margin: 10px;
+    margin-left: 0px;
+}
+#newsform #preview input.button,
+#newsform #preview input.defaultbutton {
+    display: inline;
+}
+#newsform #preview .meta {
+    margin: 10px 0px;
+    clear: both;
+}

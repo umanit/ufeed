@@ -1,0 +1,4 @@
+To use this extension, you will need to run sql/mysql/schema.sql on your database
+and import the package : packages/ufeed_newsitem_class-1.0.ezpkg
+
+Blank templates are provided. To use them, you will have to rename the siteaccess directories in the settings folder, or copy override rules into your settings/siteaccess directory.

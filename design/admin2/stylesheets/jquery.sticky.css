@@ -1,0 +1,15 @@
+.stickem-container {
+    position: relative;
+}
+
+.stickit {
+    margin-left: 660px;
+    position: fixed;
+    top: 0;
+}
+
+.stickit-end {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+}

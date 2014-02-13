@@ -1,0 +1,13 @@
+{ezcss_require(array(
+                     'jquery.sticky.css',
+                     'admin.css'
+                    )
+              )
+}
+{ezscript_require(array(
+                        'ezjsc::jqueryio',
+                        'jquery.sticky.js',
+                        'admin.listeners.js'
+                       )
+                 )
+}
